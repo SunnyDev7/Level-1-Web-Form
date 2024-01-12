@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div>
+    <div class="form-container">
         <form>
             <label for="firstname">First Name:</label>
             <input type="text" id="firstname" name="firstname" required>
@@ -23,7 +23,7 @@
             <input type="date" id="dob" name="dob" required>
 
             <label>Gender:</label>
-            <div>
+            <div class="gender-container">
                 <input type="radio" id="male" name="gender" value="male" required>
                 <label for="male">Male</label>
 
@@ -35,10 +35,12 @@
             </div>
 
             <div>
-                <button type="button">Submit</button>
+                <button type="button" onclick="submitForm()">Submit</button>
             </div>
         </form>
     </div>
+
+    <script src="logic.js"></script>
 </body>
 
 </html>
