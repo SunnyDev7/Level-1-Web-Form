@@ -22,18 +22,13 @@
             <label for="dob">Date of Birth:</label>
             <input type="date" id="dob" name="dob" required>
 
-            <label>Gender:</label>
-            <div class="gender-container">
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
-
-                <input type="radio" id="female" name="gender" value="female" required>
-                <label for="female">Female</label>
-
-                <input type="radio" id="other" name="gender" value="other" required>
-                <label for="other">Other</label>
-            </div>
-
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
             <div>
                 <button type="button" onclick="submitForm()">Submit</button>
             </div>
