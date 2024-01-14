@@ -32,6 +32,7 @@ input, select{
 }
 
 button {
+    margin-top: 10px;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
@@ -55,5 +56,10 @@ button:hover {
     flex: 1;
 }
 
+.errorMessage {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: red;
+}
 
 

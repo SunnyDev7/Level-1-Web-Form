@@ -10,24 +10,30 @@
 <body>
     <div class="form-container">
         <form>
-            <label for="firstname">First Name:</label>
+            <label for="firstname">First Name *</label>
             <input type="text" id="firstname" name="firstname" required>
+            <span id="firstnameError" class="errorMessage"></span>
 
-            <label for="lastname">Last Name:</label>
+            <label for="lastname">Last Name *</label>
             <input type="text" id="lastname" name="lastname" required>
+            <span id="lastnameError" class="errorMessage"></span>       
 
-            <lable for="email">Email Address:</lable>
+            <lable for="email">Email Address *</lable>
             <input type="email" id="email" name="email" required>
+            <span id="emailError" class="errorMessage"></span>
 
-            <label for="dob">Date of Birth:</label>
+            <label for="dob">Date of Birth *</label>
             <input type="date" id="dob" name="dob" required>
+            <span id="dobError" class="errorMessage"></span>
 
-            <label for="gender">Gender:</label>
+            <label for="gender">Gender *</label>
             <select id="gender" name="gender" required>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
-            </select>
+            </select>   
+            
+            <span id="formError" class="errorMessage"></span>
             
             <div>
                 <button type="button" onclick="submitForm()">Submit</button>
